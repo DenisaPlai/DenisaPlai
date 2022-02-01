@@ -1,0 +1,292 @@
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+  * {
+  box-sizing: border-box;
+  }
+
+  body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  background: #eee;
+  height: auto;
+  }
+
+  h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin: 0;
+  }
+
+  h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0;
+  }
+
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+
+  img {
+  display: block;
+  width: 100%;
+  }
+
+  main {
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+  -30px 0px 40px rgba(0, 0, 0, 0.1);
+  }
+
+
+  /* unvisited link */
+  a:link {
+  color: #333;
+  text-decoration: none;
+  }
+
+  /* visited link */
+  a:visited {
+  color: #000;
+  text-decoration: none;
+
+  }
+
+  /* mouse over link */
+  a:hover {
+  color: #333;
+  text-decoration: none;
+
+  }
+
+  /* selected link */
+  a:active {
+  color: #333;
+  text-decoration: none;
+
+  }
+
+  /*****************************************/
+  /**************Landing********************/
+  /*****************************************/
+
+  #landing {
+  background: #fff;
+  }
+
+  #landing-text {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  }
+
+  #landing-text h2 {
+  color: #888;
+  }
+
+  #landing-image {
+  background: url(https://as2.ftcdn.net/v2/jpg/01/17/19/37/1000_F_117193711_tPPquLbqc7BQ9f9L7EKPV8Itd0CgkdNT.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+  flex: 0 1 60vw;
+  margin: 0;
+  }
+
+  .btn {
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  transition: background 500ms ease;
+  }
+
+  .btn:hover {
+  background: #f4f4f4;
+  }
+
+
+  #header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+  }
+
+  #header h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  }
+
+  .text {
+  padding: 2rem;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  }
+
+
+  .content{
+  padding: 40px;
+  padding-left: 80px;
+
+  }
+
+  .opacity{
+  opacity: 75%;
+  }
+
+  .list{
+  list-style-type: disc;
+  padding-left: 60px;
+  }
+
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .column {
+  flex: 50%;
+  max-width: 50%;
+  padding: 20px;
+  }
+
+  .language_padding{
+  margin-left: 20px;
+  }
+
+  /*****************************************/
+  /***************map*********************/
+  /*****************************************/
+
+  .locatie{
+
+  padding-left: 10%;
+  padding-bottom: 4%;
+
+
+  }
+
+  .locatie iframe{
+  border: 1px solid #333;
+  border-radius: 10px; 
+  }
+
+
+  /*****************************************/
+  /***************footer*********************/
+  /*****************************************/
+
+  footer {
+  text-align: center;
+  color: #fff;
+  background:#333;
+  padding-bottom: 15px;
+  padding-top: 15px; 
+  }
+
+
+  #copyright{
+  margin: 0px;
+  }
+
+  .fa {
+  color: white;
+  font-size: 40px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 10px;
+
+  }
+
+  .fa:hover {
+  opacity: 0.7;
+  }
+
+
+  /*****************************************/
+  /***************media*********************/
+  /*****************************************/
+
+  /* Screen Sizes 500px and Up */
+  @media (min-width: 500px) {
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text {
+    height: 100vh;
+  }
+
+  #landing-image {
+    height: 100vh;
+  }
+
+  }
+
+
+  /* Screen Sizes 500px and Up */
+  @media (min-width: 500px) {
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text {
+    height: 100vh;
+  }
+
+  #landing-image {
+    height: 100vh;
+  }
+  }
+
+  /* Screen Sizes 700px and Up */
+  @media (min-width: 700px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
+  }
+
+
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+  div.column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+  div.column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
